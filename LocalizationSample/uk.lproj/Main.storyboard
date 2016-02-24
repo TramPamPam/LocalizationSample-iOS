@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalizationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привіт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZt-y3-LTX" userLabel="GreetingsLabel">
+                                <rect key="frame" x="274" y="283" width="53" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVq-v4-MTf" userLabel="Goodbye Button">
+                                <rect key="frame" x="279" y="368" width="43" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Бувай"/>
+                                <connections>
+                                    <action selector="byeTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UfX-IY-3Ol"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QP2-8b-yt7" userLabel="FlagImageView">
+                                <rect key="frame" x="180" y="130" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="TMN-Gp-2Qz"/>
+                                    <constraint firstAttribute="width" constant="240" id="crm-Wd-6gg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CVq-v4-MTf" firstAttribute="centerX" secondItem="mZt-y3-LTX" secondAttribute="centerX" id="83l-H8-ehR"/>
+                            <constraint firstItem="mZt-y3-LTX" firstAttribute="centerX" secondItem="QP2-8b-yt7" secondAttribute="centerX" id="Ke3-WO-qtV"/>
+                            <constraint firstItem="mZt-y3-LTX" firstAttribute="top" secondItem="QP2-8b-yt7" secondAttribute="bottom" constant="25" id="Kot-Yb-R37"/>
+                            <constraint firstItem="CVq-v4-MTf" firstAttribute="top" secondItem="mZt-y3-LTX" secondAttribute="bottom" constant="65" id="XcH-CO-1YR"/>
+                            <constraint firstItem="QP2-8b-yt7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2e-H6-RbX"/>
+                            <constraint firstItem="QP2-8b-yt7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="vXe-Oa-hxn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flagImageView" destination="QP2-8b-yt7" id="YNX-3z-Xjh"/>
+                        <outlet property="greetingsLabel" destination="mZt-y3-LTX" id="AXS-51-NxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293" y="449"/>
+        </scene>
+    </scenes>
+</document>

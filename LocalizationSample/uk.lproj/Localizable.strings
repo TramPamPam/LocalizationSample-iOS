@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LocalizationSample
+
+  Created by Oleksandr Bezpalchuk on 24/02/2016.
+  Copyright © 2016 Oleksandr Bezpalchuk. All rights reserved.
+*/
+
+"FlagImageName" = "Ukraine";
+"GoodbyeAlertMessage" = "Дякуємо, що використовували таку мову - %@";
+"GoodbyeAlertTitle" = "Бувайте";

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  LocalizationSample
+
+  Created by Oleksandr Bezpalchuk on 24/02/2016.
+  Copyright © 2016 Oleksandr Bezpalchuk. All rights reserved.
+*/
+
+"FlagImageName" = "United_Kingdom";
+"GoodbyeAlertMessage" = "Thank you for using %@";
+"GoodbyeAlertTitle" = "Goodbye";
